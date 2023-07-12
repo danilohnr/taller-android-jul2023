@@ -1,10 +1,10 @@
-export default function CharacterItem(){
+export default function CharacterItem({character}){
     return (
         <div className="item">
             <img 
             className='image'
-            src="https://rickandmortyapi.com/api/character/avatar/5.jpeg"/>
-        <h1>Rick</h1>
+            src={character.image}/>
+        <h1 className="name">{character.name}</h1>
         </div>
     )
 }
